@@ -14,5 +14,5 @@ RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
 COPY commands.sh commands.sh
 
-#ENTRYPOINT ["/bin/sh", "-c" , "chmod 777 commands.sh && ./commands.sh"]
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/sh", "-c" , "chmod 777 commands.sh && ./commands.sh"]
+#ENTRYPOINT ["/bin/bash"]

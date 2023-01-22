@@ -64,6 +64,9 @@ docker run --rm -it -d --volume=$TO_BE_COMPILED_DIR:/$2:rw --volume=$PWD --name 
 
 #terminal commands
 #docker build -t builder --build-arg VERSION=18.04 --build-arg DEPS="$(< DEPS.env)" .
+
 #docker run --rm -it -d --volume=/home/alan/robocup/brt/libsetplay:/libsetplay --name builder builder
+
+#docker run --rm -it -d --volume=$PWD/bahiart:/bahiart ${PWD}:/usr/src/project --name builder builder
 
 #docker run --rm -it -d --volume=$PWD/bahiart:/bahiart --volume=/$PWD/libsetplay:/libsetplay --name builder builder
