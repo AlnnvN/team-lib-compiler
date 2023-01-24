@@ -2,7 +2,8 @@ ARG VERSION ''
 
 FROM ubuntu:${VERSION}
 
-ARG DEPS ''
+#DEPS.env hard-coded for both libsetplay and bahiart
+ARG DEPS="g++ cmake libboost-dev libboost-system-dev libxml2-dev"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
