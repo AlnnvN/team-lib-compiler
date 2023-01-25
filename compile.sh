@@ -32,10 +32,10 @@ fi
 
 ############ RUN DOCKER ############# 
 
-docker build -t builder --build-arg VERSION=$UBUNTU_VERSION $PWD
+docker build -t teamscript --build-arg VERSION=$UBUNTU_VERSION $PWD
 
 #Not using -d so you're able to see the compilation progress
-docker run --rm -it --volume=$PWD/bahiart:/bahiart --volume=/$PWD/libsetplay:/libsetplay --name builder builder
+docker run --rm -it --volume=$PWD/bahiart:/bahiart --volume=/$PWD/libsetplay:/libsetplay --name teamscript teamscript
 
 #Build container using DEPS.env in case of extensive dependencies 
 #docker build -t builder --build-arg VERSION=$UBUNTU_VERSION --build-arg DEPS="$(< DEPS.env)" $PWD
