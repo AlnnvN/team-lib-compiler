@@ -8,7 +8,7 @@ cd ../bahiart
 make clean
 rm libs/libsetplay/lib/*
 cp ../libsetplay/lib/libsetplay.a libs/libsetplay/lib/
-make -j8 -C ../bahiart
+make -j8
 
 
 
