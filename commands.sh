@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 cd libsetplay
 ./configure
 make clean
